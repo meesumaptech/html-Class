@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Doc</title>
+</head>
+
+<style type="text/css">
+	body
+	{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.preloader
+	{
+		width: 400px;
+		height: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}	
+
+	.big-circle
+	{
+		width: 300px;
+		height: 300px;
+		background-color: #f02a2b;
+		border-radius: 50%;
+		animation:bigcircle 2s infinite;
+		position: absolute;
+		opacity: 0%;
+	}
+
+	.small-circle
+	{
+		width: 200px;
+		height: 200px;
+		background-color: #f02a2b;
+		border-radius: 50%;
+		animation:smallcircle 2s infinite;
+		position: relative;
+		animation-delay: 0.5s;
+		opacity: 0%;
+	}
+	@keyframes bigcircle
+	{
+		from
+		{
+			transform: scale(0.0);
+			opacity: 100%;
+		}
+
+		to
+		{
+			transform: scale(1.3);
+			opacity: 0%;
+		}
+	}
+
+	@keyframes smallcircle
+	{
+		from
+		{
+			transform: scale(0.0);
+			opacity: 100%;
+		}
+
+		to
+		{
+			transform: scale(1.3);
+			opacity: 0%;
+		}
+	}
+</style>
+
+<body>
+	<div class="preloader">
+		<div class="big-circle"></div>
+		<div class="small-circle"></div>
+	</div>
+</body>
+</html>

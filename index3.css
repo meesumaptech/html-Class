@@ -1,0 +1,94 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.navigation-bar
+{
+	width: 100%;
+	height: 100px;
+	background-color: #1a1a1a;
+}
+.logo
+{
+	width: 30%;
+	height: inherit;
+	float: left;
+}
+.nav-bar
+{
+	width: 70%;
+	height: inherit;
+	float: left;
+}
+button
+{
+	display: none;
+}
+
+.image
+{
+	width: 80%;
+	height: 80px;
+	margin-left: 35px;
+	margin-top: 10px;
+	background-image: url('image/logo.png');
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+
+}
+
+.nav-links
+{
+	width: 85%;
+	height: 50px;
+	margin-top: 25px;
+}
+
+.nav-bar .nav-links ul 
+{
+	list-style-type: none;
+
+}
+
+.nav-bar .nav-links ul li
+{
+	float: left;
+	margin-top: 8px;
+	margin-left: 15px;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	/*transition: 1s;*/
+}
+.nav-bar .nav-links ul li:hover
+{
+	/*background-color: #3c3c3c;*/
+	/*transition: 1s;*/
+	/*border-bottom: 4px solid red;*/
+	border: 2px solid #2c2c2c;
+}
+@media screen and (max-width:768px)
+{
+	.navigation-bar
+	{
+		flex-direction:column;
+		height: 400px;
+	}
+	.nav-bar
+	{
+		display: none;
+
+	}
+	.logo
+	{
+		width:400px ;
+	}
+	button
+	{
+		width: 40px;
+		float: left;
+		display: block;
+	}
+}

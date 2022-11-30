@@ -1,0 +1,34 @@
+.box
+{
+	width: 100%;
+	height: 200px;
+	background-color: red;
+}
+
+.small-box
+{
+	width: 33.33%;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+}
+.small-box2
+{
+	width: 33.33%;
+	height: 200px;
+	background-color: blue;
+	float: left;
+}
+.small-box3
+{
+	width: 33.33%;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+}
+.box1
+{
+	width:50% ;
+	height:100px ;
+	background-color: blue;
+}
